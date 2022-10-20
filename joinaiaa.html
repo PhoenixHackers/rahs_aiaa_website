@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href='./style.css'>
+
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class = "placeholder">Welcome!</h1>
+        <ul class="nav-links">
+            <li class="inactive homepage"><a href="#"></a>Home</li>
+            <li class = "inactive discord"><a href=""></a>Socials</li>
+            <li class = "inactive utilities"><a href=""></a>Utilities</li>
+            <li class = "inactive information"><a href=""></a>Technology</li>
+            <li class = "active aiaa"><a href=""></a>Join!!!</li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2 class = "pretty_animation">Raisbeck Aviation</h2>
+            <div class="line"></div>
+            <h1></h1>
+            <a href="#" class="genericbutton">Discord Server</a>
+        </div>
+    </header>
+    <h1></h1>
+    <section class="CyberPatriot">
+        <p class = "subtitle">CyberPatriot</p>
+        <div style="text-align: center;"> 
+            <img src="./images/funny1.gif" class = "img1" width = "405" height = "250">
+        </div>
+        <h4 class = "generictext">Cyber Patriot</h4>
+        <p class = "generictext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div style="text-align: center;"> 
+            <a class = "genericbutton">Lorem ipsum!</a>
+        </div>
+    </section>
+    <section class="Autonomous Drone">
+        <p class = "subtitle">Autonomous Drone</p>
+        <div style="text-align: center;">
+            <img src="./images/funny2.gif" class = "img1" width = "405" height = "250">
+        </div>
+        <h4 class = "generictext">Autonomous Drones</h4>
+        <p class = "generictext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div style="text-align: center;"> 
+            <a class = "genericbutton">Lorem ipsum!</a>
+        </div>
+    </section>
+    <p class="generictext">Social Media</p>
+    <div style="text-align: center;"> 
+        <img src="./images/discord2.jpg" class = "img1" width = "100" height = "100">
+        <img src="./images/instagram.jpg" class = "img1" width = "100" height = "100">
+    </div>
+    <h1></h1>
+    <p class="generictext">CopyLeft © 2022</p>
+    <p class="generictext">Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is made for “fair use” for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use. </p>
+    <script>
+        const information = document.querySelector('.information')
+        information.addEventListener('click', ()=> {
+            window.location.replace('./information.html');
+        })
+
+        const home = document.querySelector('.homepage')
+        home.addEventListener('click', ()=> {
+            window.location.replace('./index.html');
+        })
+        
+        const discord = document.querySelector('.discord')
+        discord.addEventListener('click', ()=> {
+            window.location.replace('./discord.html');
+        })
+
+        const utilities = document.querySelector('.utilities')
+        utilities.addEventListener('click', ()=> {
+            window.location.replace('./utils.html');
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href='./style.css'>
+
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Welcome!</h1>
+        <ul class="nav-links">
+            <li class="inactive homepage"><a href=""></a>Home</li>
+            <li class = "inactive discord"><a href=""></a>Socials</li>
+            <li class = "inactive utilities"><a href=""></a>Utilities</li>
+            <li class = "active information"><a href=""></a>Technology</li>
+            <li class = "inactive aiaa"><a href=""></a>Join!</li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2 class = "pretty_animation">Raisbeck Aviation</h2>
+            <div class="line"></div>
+            <h1></h1>
+        </div>
+    </header>
+    <section class="Matter">
+        <p class = "subtitles">Technology is the future. If technology is abused and misued, the future is wasted.</p>
+    </section>
+    <section class="Good">
+        <p class = "subtitle">The Good</p>
+        <p class = "generictext">Historically, technology has been wonderful. It's provided substantial increases in quality of life. It’s decreased infant mortality by treating diseases that would kill children in the earliest stages of life. It’s treated diseases such as the flu, or found vaccines for diseases such as smallpox. It’s fed billions with mechanical muscles, modified seeds and nitrogen based fertilizers and methods to prolong food's edible life using methods such as refrigeration or canning. It’s provided a deeper understanding of ourselves and the universe around us, instead of hundling in the dark humans now live generally comfortable lives. </p>
+        <div style="text-align: center;"> 
+            <img src="./images/production.gif" class = "img1" width = "405" height = "250">
+        </div>
+    </section>
+    <section class="Bad">
+        <p class = "subtitle">The Bad</p>
+        <p class = "generictext">We all know about privacy and information related issues caused by companies like Facebook, now Meta. We’re also aware of carbon emissions produced in hundreds of ways every single day. The same cargo ships that carry food, supplies and medicine produce more carbon than 50,000,000 automobiles. Modern industrial farms pollute in more ways than one, they produce methane, consume immeasurable amounts of finite water resources and are extremely inhumane. It can seem at times that wherever we look there is a massive downside being ignored.</p>
+        <div style="text-align: center;"> 
+            <img src="./images/pollution.gif" class = "img1" width = "405" height = "250">
+        </div>
+    </section>
+    <section class="Complexities">
+        <p class = "subtitle">Complexities</p>
+        <p class = "generictext">You might make an argument against nations like China or India for polluting carbon emissions, however, from their point of view they are simply feeding their people and increasing their quality of life. It’s similar in the United States, from the perspective of coal miners taking away or reducing coal is equivalent to destroying their livelihood. You could also make the argument that it doesn’t matter if technologies are destructive if the market values them enough to continue doing so.</p>
+        <div style="text-align: center;"> 
+            <img src="./images/china.jpg" class = "img1" width = "405" height = "250">
+        </div>
+    </section>
+    <section class="Solutions">
+        <p class = "subtitle">Solutions</p>
+        <p class = "generictext">We need to incentivize good behavior. We shouldn't punish the innocent but rather reward corporations and organizations that act in moral and humane ways. We should take actions such as taxing data and pollution. This has the two fold effect of both funding our efforts and disincentivizing harmful, exploitative behavior.        </p>
+    </section>
+    <script>
+        const homepage = document.querySelector('.homepage')
+        homepage.addEventListener('click', ()=>{
+            window.location.replace('./index.html');
+        })
+
+        const utilities = document.querySelector('.utilities')
+        utilities.addEventListener('click', ()=> {
+            window.location.replace('./utils.html');
+        })
+        const discord = document.querySelector('.discord')
+        discord.addEventListener('click', ()=> {
+            window.location.replace('./discord.html');
+        })
+
+        const aiaa = document.querySelector('.aiaa')
+        aiaa.addEventListener('click', ()=> {
+            window.location.replace('./joinaiaa.html');
+        })
+    </script>
+</body>
+</html>

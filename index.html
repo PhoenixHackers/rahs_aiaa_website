@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href='./style.css'>
+
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class = "placeholder">Welcome!</h1>
+        <ul class="nav-links">
+            <li class="active homepage"><a href="#"></a>Home</li>
+            <li class = "inactive discord"><a href=""></a>Socials</li>
+            <li class = "inactive utilities"><a href=""></a>Utilities</li>
+            <li class = "inactive information"><a href=""></a>Technology</li>
+            <li class = "inactive aiaa"><a href=""></a>Join!</li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2 class = "pretty_animation">Raisbeck Aviation</h2>
+            <div class="line"></div>
+            <h1></h1>
+            <a href="#" class="genericbutton">Discord Server</a>
+        </div>
+    </header>
+    <section class="Activities">
+        <div class="title">
+            <h1>Activities</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./images/funny2.gif" class = "img1" width = "405" height = "250">
+                <h4 class = "generictext">Autonomous UAV</h4>
+                <a href="#" class="button3">Click for details.</a>
+            </div>
+            <div class="col">
+                <img src="./images/funny1.gif" class = "img1" width = "405" height = "250">
+                <h4 class = "generictext">Cyber Patriot</h4>
+                <a href="#" class="button3">Click for details.</a>
+            </div>
+        </div>
+    </section>
+    <p class="generictext">Social Media</p>
+    <div style="text-align: center;"> 
+        <img src="./images/discord2.jpg" class = "img1" width = "100" height = "100">
+        <img src="./images/instagram.jpg" class = "img1" width = "100" height = "100">
+    </div>
+    <h1></h1>
+    <p class="generictext">Copyright © 2022 (not really)</p>
+    <p class="generictext">Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is made for “fair use” for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use. </p>
+    <script>
+        const discord = document.querySelector('.discord')
+        discord.addEventListener('click', ()=> {
+            window.location.replace('./discord.html');
+        })
+
+        const utilities = document.querySelector('.utilities')
+        utilities.addEventListener('click', ()=> {
+            window.location.replace('./utils.html');
+        })
+
+        const information = document.querySelector('.information')
+        information.addEventListener('click', ()=> {
+            window.location.replace('./information.html');
+        })
+
+        const aiaa = document.querySelector('.aiaa')
+        aiaa.addEventListener('click', ()=> {
+            window.location.replace('./joinaiaa.html');
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href='./style.css'>
+
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Welcome!</h1>
+        <ul class="nav-links">
+            <li class="inactive homepage"><a href="#"></a>Home</li>
+            <li class = "inactive discord"><a href=""></a>Socials</li>
+            <li class = "active utilities"><a href=""></a>Utilities</li>
+            <li class = "inactive information"><a href=""></a>Technology</li>
+            <li class = "inactive aiaa"><a href=""></a>Join!</li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2 class = "pretty_animation">Raisbeck Utilities</h2>
+            <div class="line"></div>
+            <h1></h1>
+            <a href="#" class="genericbutton fom">Figure of Merit</a>
+            <a href="#" class="genericbutton wing">Wingspan</a>
+            <a href="#" class="genericbutton goal">Semilength</a>
+        </div>
+    </header>
+    <script>
+        function radians(angle) {
+            const TAU = 2 * Math.PI;
+            //literally 2pi
+            return angle * TAU / 360;
+            //The circumference of a circle is 2pi * the radius thus 2pi is the amount of raidians in a circle.
+        }
+        const goal = document.querySelector('.goal');
+        goal.addEventListener('click', ()=>{
+            window.alert("Please only use numbers or decimals not commas or other characters. Also ensure a bisymmetrical design.");
+            const a = window.prompt('Wingspan Goal: ');
+            const b = window.prompt('Sweep Angle in Degrees: ');
+            
+            const goal = a / Math.sin(radians(b));
+            
+            window.alert("Semilength goal: " + goal);
+
+        })
+        const wing = document.querySelector('.wing')
+        wing.addEventListener('click', ()=>{
+            window.alert("Please only use numbers or decimals not commas or other characters. Also ensure a bisymmetrical design.");
+            const a = window.prompt('Semilength (one side): ');
+            var c = window.prompt('Angle (between the two congruent sides in degrees): ');
+
+            const b = a;
+            //Bisymetrical design
+
+            c = radians(c);
+
+            const wingspan = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2) - (2 * a * b * Math.cos(c)));
+            //Law of Cosines
+            window.alert('Wingspan: ' + wingspan);
+        })
+        const fom = document.querySelector('.fom')
+        fom.addEventListener('click', ()=>{
+            window.alert("Please only use numbers or decimals not commas or other characters.")
+            const cost = window.prompt('Cost: ')
+
+            const UnweightedCost = (200000 - cost) / 200000
+            const WeightedCost = UnweightedCost * 10
+
+            const mass = window.prompt('Mass: ').replace("'", "")
+
+            const UnweightedMass = (100 - mass) / 100
+            const WeightedMass = UnweightedMass * 25
+
+            const temperature = window.prompt('Temperature Change: ').replace("'", "")
+
+            const UnweightedTemperature = (15 - temperature) / 15
+            const WeightedTemperature = UnweightedTemperature * 200
+
+            const complexity = window.prompt('Complexity: ').replace("'", "")
+
+            const UnweightedComplexity = (5 - complexity) / 5
+            const WeightedComplexity = UnweightedComplexity * 20
+
+            const protectedarea = window.prompt('Protected Area: ').replace("'", "")
+
+            const UnweightedPA = (protectedarea - 70) / 70
+            if(protectedarea >= 100 ) {
+                var WeightedPA = UnweightedPA * 10
+            } else {
+                var WeightedPA = UnweightedPA * 15
+            }
+
+            const FoM = WeightedCost + WeightedMass + WeightedComplexity + WeightedPA + WeightedTemperature
+
+            window.alert('MAKE SURE THESE VALUES ARE CORRECT!\nCost: ' + cost + '$\nMass: ' + mass + 'g\nTemperature Change: ' + temperature +' degrees\nComplexity: ' + complexity + '\nProtected Area: ' + protectedarea)
+
+            window.alert('Finally, your FOM: ' + FoM)
+
+            window.alert('Unweighted Cost: ' + UnweightedCost + '\nUnweighted Mass: ' + UnweightedMass + '\nUnweighted Temperature: ' + UnweightedTemperature +'\nUnweighted Complexity: ' + UnweightedComplexity + '\nUnweighted Protected Area: ' + UnweightedPA + '\nWeighted Cost: ' + WeightedCost + '\nWeighted Mass: ' + WeightedMass + '\nWeighted Temperature: ' + WeightedTemperature +'\nWeighted Complexity: ' + WeightedComplexity + '\nWeighted Protected Area: ' + WeightedPA)
+        })
+
+        const homepage = document.querySelector('.homepage')
+        homepage.addEventListener('click', ()=>{
+            window.location.replace('./index.html');
+        })
+
+        const discord = document.querySelector('.discord')
+        discord.addEventListener('click', ()=> {
+            window.location.replace('./discord.html');
+        })
+
+        const information = document.querySelector('.information')
+        information.addEventListener('click', ()=> {
+            window.location.replace('./information.html');
+        })
+
+        const aiaa = document.querySelector('.aiaa')
+        aiaa.addEventListener('click', ()=> {
+            window.location.replace('./joinaiaa.html');
+        })
+    </script>
+</body>
+</html>
