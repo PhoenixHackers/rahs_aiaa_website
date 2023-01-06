@@ -6,6 +6,7 @@
     <link rel="stylesheet" href='./style.css'>
 
 </head>
+<title>Home</title>
 <body>
     <nav class="navbar">
         <h1 class = "placeholder">Welcome!</h1>
@@ -13,7 +14,7 @@
             <li class="active homepage"><a href="#"></a>Home</li>
             <li class = "inactive discord"><a href=""></a>Socials</li>
             <li class = "inactive utilities"><a href=""></a>Utilities</li>
-            <li class = "inactive information"><a href=""></a>Technology</li>
+            <li class = "inactive information"><a href=""></a>About Us</li>
             <li class = "inactive aiaa"><a href=""></a>Join!</li>
         </ul>
     </nav>
@@ -25,7 +26,14 @@
             <a href="#" class="genericbutton">Discord Server</a>
         </div>
     </header>
+    <!--...<section class="section1">
+        <div class="title">
+            <h1>Activities</h1>
+            <div class="line"></div>
+        </div>
+    </section>-->
     <section class="Activities">
+        <!--...<a href="http://www.free-iqtest.net" title="IQ Test for Free"><img src="http://www.free-iqtest.net/images/badges2/l160.gif" width="200" height="100" alt="IQ Test for Free" border="0"></a-->>
         <div class="title">
             <h1>Activities</h1>
             <div class="line"></div>
@@ -52,6 +60,16 @@
     <p class="generictext">Copyright © 2022 (not really)</p>
     <p class="generictext">Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is made for “fair use” for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use. </p>
     <script>
+        const [red, green, blue] = [69, 111, 225]
+        const section1 = document.querySelector('.section1')
+
+        window.addEventListener('scroll', () => {
+        let y = 1 + (window.scrollY || window.pageYOffset) / 150
+        y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
+        const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+        section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+        })
+
         const discord = document.querySelector('.discord')
         discord.addEventListener('click', ()=> {
             window.location.replace('./discord.html');
@@ -71,6 +89,7 @@
         aiaa.addEventListener('click', ()=> {
             window.location.replace('./joinaiaa.html');
         })
+
     </script>
 </body>
 </html>
