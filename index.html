@@ -6,7 +6,8 @@
     <link rel="stylesheet" href='./style.css'>
 
 </head>
-<title>Home</title>
+<title>RAHS AIAA</title>
+<link rel="icon" type="/images/favicon.ico" href="/images/favicon.ico">
 <body>
     <nav class="navbar">
         <h1 class = "placeholder">Welcome!</h1>
@@ -57,15 +58,14 @@
         <img src="./images/instagram.jpg" class = "img1" width = "100" height = "100">
     </div>
     <h1></h1>
-    <p class="generictext">Copyright © 2022 (not really)</p>
-    <p class="generictext">Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is made for “fair use” for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use. </p>
+    <p class="generictext">Copyright © 2023 (not really)</p>
     <script>
-        const [red, green, blue] = [69, 111, 225]
+        const [red, green, blue] = [69, 69, 69]
         const section1 = document.querySelector('.section1')
 
         window.addEventListener('scroll', () => {
         let y = 1 + (window.scrollY || window.pageYOffset) / 150
-        y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
+        y = y < 1 ? 1 : y
         const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
         section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
         })
