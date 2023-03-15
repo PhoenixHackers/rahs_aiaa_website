@@ -7,6 +7,15 @@
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
 a {
     text-decoration: none;
 }
@@ -19,6 +28,9 @@ body, html {
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: fadeIn ease 0.75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 .generictext {
     animation: fadeIn ease 1.5s;
@@ -26,6 +38,14 @@ body, html {
     flex-direction: column;
     align-items: center;
     color: whitesmoke;
+}
+.softlink {
+    animation: fadeIn ease 1.5s;
+    color: whitesmoke;
+}
+.softlink:hover {
+    transition: all .25s ease-in-out; 
+    color: #d12991;
 }
 .underline {
     text-decoration: underline;
@@ -174,7 +194,6 @@ section {
 .inactive:hover {
     transition: all .25s ease-in-out; 
     color: #d12991;
-    
 }
 .events.row {
     margin-top: 50px;
