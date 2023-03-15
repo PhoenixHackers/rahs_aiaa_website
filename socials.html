@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href='./style.css'>
+
+</head>
+<title>Socials</title>
+<body>
+    <nav class="navbar">
+        <h1>Welcome!</h1>
+        <ul class="nav-links">
+            <li class="inactive homepage"><a href=""></a>Home</li>
+            <li class = "active socials"><a href=""></a>Socials</li>
+            <li class = "inactive utilities"><a href=""></a>Utilities</li>
+            <li class = "inactive information"><a href=""></a>About Us</li>
+            <li class = "inactive aiaa"><a href=""></a>Join!</li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2 class = "pretty_animation">Our Social Media</h2>
+            <div class="line"></div>
+            <h1></h1>
+            <div style="text-align: center;"> 
+                <img src="./images/instagram_no_background.png" class = "img1" width = "100" height = "100">
+            </div>
+        </div>
+    </header>
+    <section class="socials">
+        <p class = "subtitle">Instagram</p>
+        <p class = "generictext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div style="text-align: center;"> 
+            <a class = "genericbutton">Lorem ipsum!</a>
+        </div>
+    </section>
+    <script>
+        const homepage = document.querySelector('.homepage')
+        homepage.addEventListener('click', ()=>{
+            window.location.replace('./index.html');
+        })
+
+        const utilities = document.querySelector('.utilities')
+        utilities.addEventListener('click', ()=> {
+            window.location.replace('./utils.html');
+        })
+
+        const information = document.querySelector('.information')
+        information.addEventListener('click', ()=> {
+            window.location.replace('./information.html');
+        })
+
+        const aiaa = document.querySelector('.aiaa')
+        aiaa.addEventListener('click', ()=> {
+            window.location.replace('./joinaiaa.html');
+        })
+    </script>
+</body>
+</html>

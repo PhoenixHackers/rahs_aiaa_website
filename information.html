@@ -13,25 +13,26 @@
         <h1>Welcome!</h1>
         <ul class="nav-links">
             <li class="inactive homepage"><a href=""></a>Home</li>
-            <li class = "inactive discord"><a href=""></a>Socials</li>
+            <li class = "inactive socials"><a href=""></a>Socials</li>
             <li class = "inactive utilities"><a href=""></a>Utilities</li>
             <li class = "active information"><a href=""></a>About Us</li>
             <li class = "inactive aiaa"><a href=""></a>Join!</li>
         </ul>
     </nav>
-    <header>
-        <div class="header-content">
-            <h2 class = "pretty_animation">What does Raisbeck's AIAA do?</h2>
-            <div class="line"></div>
-            <h1></h1>
-            <a href="#" class="genericbutton">Discord Server</a>
+    <section class="CyberPatriot">
+        <p class = "subtitle">What does AIAA do?</p>
+        <h4 class = "generictext">What is AIAA?</h4>
+        <div style="text-align: center;"> 
+            <img src="./images/aiaa.png" class = "img1" width = "405" height = "250">
         </div>
-    </header>
-    <h1></h1>
+        <div class="generictext"> 
+            <p>AIAA stands for <b>American Institute of Aeronautics and Astronautics</b>, AIAA is the world's largest aerospace technical society. With nearly 30000 individual members from 85 countries, and 95 corporate members. With the <u href="https://www.aiaa.org/about#:~:text=Our%20purpose%20is%20to%20ignite,a%20champion%20for%20its%20achievements." class = 'softlink'>promise</u> to "to ignite and celebrate aerospace ingenuity and collaboration, and its importance to our way of life." At Raisbeck, we offer even more.</p>
+        </div>
+    </section>
     <section class="CyberPatriot">
         <p class = "subtitle">CyberPatriot</p>
         <div style="text-align: center;"> 
-            <img src="./images/funny1.gif" class = "img1" width = "405" height = "250">
+            <img src="./images/cyberpatriot.jpg" class = "img1" width = "405" height = "250">
         </div>
         <h4 class = "generictext">Cyber Patriot</h4>
         <p class = "generictext">CyberPatriot is a contest in which teams secure virtual machines, basically simulated computers on your computer. CyberPatriot teaches important IT skills and challenges competitors to secure various operating systems while also conforming to the client’s needs and wishes. CyberPatriot competitions are essentially sessions in which teams solve as many vulnerabilities as they can, answer forensics questions and configure a computer to a client's specifications. Anyone at any level is welcome to join CyberPatriot.</p>
@@ -64,7 +65,7 @@
     <section class="AIAA is about YOU">
         <p class = "subtitle">AIAA is about YOU</p>
         <div style="text-align: center;">
-            <img src="./images/funny2.gif" class = "img1" width = "405" height = "250">
+            <img src="./images/student_tour.jpg" class = "img1" width = "405" height = "250">
         </div>
         <h4 class = "generictext">Personal Projects</h4>
         <div class="generictext">
@@ -76,13 +77,18 @@
     </section>
     <p class="generictext">Social Media</p>
     <div style="text-align: center;"> 
-        <img src="./images/discord2.jpg" class = "img1" width = "100" height = "100">
         <img src="./images/instagram.jpg" class = "img1" width = "100" height = "100">
     </div>
     <h1></h1>
     <p class="generictext">Copyright © 2023</p>
     </header>
     <script>
+
+        const soft = document.querySelector('.softlink')
+        soft.addEventListener('click', ()=>{
+            window.open('https://www.aiaa.org/about#:~:text=Our%20purpose%20is%20to%20ignite,a%20champion%20for%20its%20achievements.');
+        })
+
         const homepage = document.querySelector('.homepage')
         homepage.addEventListener('click', ()=>{
             window.location.replace('./index.html');
@@ -92,9 +98,9 @@
         utilities.addEventListener('click', ()=> {
             window.location.replace('./utils.html');
         })
-        const discord = document.querySelector('.discord')
-        discord.addEventListener('click', ()=> {
-            window.location.replace('./discord.html');
+        const socials = document.querySelector('.socials')
+        socials.addEventListener('click', ()=> {
+            window.location.replace('./socials.html');
         })
 
         const aiaa = document.querySelector('.aiaa')
