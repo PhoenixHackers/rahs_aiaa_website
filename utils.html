@@ -6,11 +6,11 @@
     <link rel="stylesheet" href='./style.css'>
 
 </head>
-<title>RAHS AIAA</title>
+<title>RAHS AIAA - Calculators</title>
 <link rel="icon" type="/images/favicon.ico" href="/images/favicon.ico">
 <body>
     <nav class="navbar">
-        <h1>Welcome!</h1>
+        <h1>Calculators</h1>
         <ul class="nav-links">
             <li class="inactive homepage"><a href="#"></a>Home</li>
             <li class = "inactive socials"><a href=""></a>Socials</li>
@@ -21,12 +21,13 @@
     </nav>
     <header>
         <div class="header-content">
-            <h2 class = "pretty_animation">Raisbeck Utilities</h2>
+            <h2 class = "pretty_animation">Calculators</h2>
             <div class="line"></div>
             <h1></h1>
             <a href="#" class="genericbutton fom">Figure of Merit</a>
             <a href="#" class="genericbutton wing">Wingspan</a>
             <a href="#" class="genericbutton goal">Semilength</a>
+            <a href="#" class="genericbutton takeoff">Takeoff Distance</a>
         </div>
     </header>
     <script>
@@ -47,6 +48,18 @@
             window.alert("Semilength goal: " + goal);
 
         })
+
+        const dist = document.querySelector('.takeoff')
+        dist.addEventListener('click', ()=>{
+            window.alert("Please only use numbers or decimals not commas or other characters. Also ensure a bisymmetrical design.");
+            const distance = window.prompt('Distance: ');
+            const base = window.prompt('Base: ');
+            const angle = window.prompt('Angle (in degrees): ');
+
+            const length = distance * (Math.sin(angle)) + base
+            window.alert('Length: ' + length);
+        })
+
         const wing = document.querySelector('.wing')
         wing.addEventListener('click', ()=>{
             window.alert("Please only use numbers or decimals not commas or other characters. Also ensure a bisymmetrical design.");
