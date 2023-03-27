@@ -59,8 +59,10 @@
         <img src="./images/instagram.jpg" class = "img1" width = "100" height = "100">
     </div>
     <h1></h1>
-    <p class="generictext">Copyright © 2023 (not really)</p>
+    <p class="generictext">Copyright © 2022-<span id="currentyear"></span></p>
     <script>
+	document.getElementById("currentyear").innerHTML = new Date().getFullYear();
+
         const socials = document.querySelector('.socials')
         socials.addEventListener('click', ()=> {
             window.location.replace('./socials.html');
