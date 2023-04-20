@@ -16,6 +16,7 @@
             <li class = "inactive socials"><a href=""></a>Socials</li>
             <li class = "active utilities"><a href=""></a>Utilities</li>
             <li class = "inactive information"><a href=""></a>About Us</li>
+            <li class = "inactive blog"><a href=""></a>Blog</li>
             <li class = "inactive aiaa"><a href=""></a>Join!</li>
         </ul>
     </nav>
@@ -70,7 +71,7 @@
             const base = window.prompt('Base: ');
             const angle = window.prompt('Angle (in degrees): ');
 
-            const length = distance * (Math.sin(angle)) + base
+            const length = distance * (Math.tan(angle)) + base
             window.alert('Length: ' + length);
         })
 
@@ -138,6 +139,11 @@
         const socials = document.querySelector('.socials')
         socials.addEventListener('click', ()=> {
             window.location.replace('./socials.html');
+        })
+
+        const blog = document.querySelector('.blog')
+        blog.addEventListener('click', ()=> {
+            window.location.replace('./blog.html');
         })
 
         const information = document.querySelector('.information')

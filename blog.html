@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href='./style.css'>
+
+</head>
+<title>RAHS AIAA - About Us</title>
+<link rel="icon" type="/images/favicon.ico" href="/images/favicon.ico">
+<body>
+    <nav class="navbar">
+        <h1>What does AIAA do?</h1>
+        <ul class="nav-links">
+            <li class="inactive homepage"><a href=""></a>Home</li>
+            <li class = "inactive socials"><a href=""></a>Socials</li>
+            <li class = "inactive utilities"><a href=""></a>Utilities</li>
+            <li class = "inactive information"><a href=""></a>About Us</li>
+            <li class = "active blog"><a href=""></a>Blog</li>
+            <li class = "inactive aiaa"><a href=""></a>Join!</li>
+        </ul>
+    </nav>
+
+    <section class="Autonomous Drone">
+        <p class = "subtitle">Highschoolers’ Adventures With a Drone</p>
+        <div style="text-align: center;">
+            <img src="./images/uav.jpg" class = "img1" width = "405" height = "250">
+        </div>
+        <h4 class = "generictext">By August Johnson</h4>
+        <p class = "generictext">Designated the rOXQ-2, AIAA’s Unmanned Aerial Vehicle is currently under construction. The project has been in the works for almost two years now and has been coming along smoothly. The project was started by Atticus Bhatt, leader of the rOXQ-2 team and Jason Poon, president of the AIAA club. This project requires lots of cooperation, communication, and creativity from everyone involved, so everyone in it is very passionate about the project. We will go over how it’s built, the history behind it, and the hopes for the project.</p>
+
+        <p class = "generictext">Charles Atchison is one of the main builders of rOXQ-2. He was responsible for building the 9’ 6” wing on the rOXQ-2. “None of us really knew what we were doing. We started with a 1:1 design for the wing because we thought it would increase efficiency and we worked from there creating and doing all the necessary math,” Atchison said in an interview with us. This way anyone who was passionate about the project could join, with nothing holding them back. No necessary requirements for joining. He started designing the wing of the rOXQ-2 by finding the desired wing area, which turned out to be 10 square feet. Then, he figured out how long the wingspan should be. After doing the calculations, Atchison hypothesized that the wingspan should be nine feet and six inches, meaning the chord of the wing needed to be 12.6 inches long at the root and tip. Finally, he calculated the camber of the wing, and used the lift equation. That’s just one of the very few calculations that workers need to do for this device, so if you’re not a math person don’t be afraid.</p>
+        <p class = "generictext">Jason Poon is the president of the AIAA club, and oversees all the subteams within it. He talks with the leaders of these subteams to make sure their work is going along smoothly. Atticus Bhatt is the leader of the UAV team who oversees all the members of the UAV team. Poon says that this project is “an amazing opportunity for our chapter to develop aerospace engineering experience in a large scale project that requires various organization techniques.” The project also requires skills of management, design, and teamwork. Poon also states that AIAA has never worked on something of this scale in the past. According to the AIAA club’s treasurer, Arthur Underwood, they have spent around $500 on the project so far. The UAV is still in its prototype phase and is going to transition into next year. In the exec meetings, they have talked about going from the prototype to a plastic molded shell that will have better flight capabilities, more durability, and allow it to carry instruments for various uses. But for now, the prototype will be the main thing that they will be focusing on. It’s a great experience that utilizes skills that are used in aerospace related or other successful careers.</p>
+
+        <p class = "generictext">The UAV project is an amazing opportunity for students to not only learn how to build aviation devices, but also how to work in a team and gain experience of working on something like this in the aerospace field. It is welcome to everyone and always looking to have new members.</p>
+    </section>
+
+    <p class="generictext">Social Media</p>
+    <div style="text-align: center;"> 
+        <img src="./images/instagram.jpg" class = "img1" width = "100" height = "100">
+    </div>
+    <h1></h1>
+    <p class="generictext">Copyright © 2023</p>
+    </header>
+    <script>
+
+        const information = document.querySelector('.information')
+        information.addEventListener('click', ()=> {
+            window.location.replace('./information.html');
+        })
+
+        const soft = document.querySelector('.softlink')
+        soft.addEventListener('click', ()=>{
+            window.open('https://www.aiaa.org/about#:~:text=Our%20purpose%20is%20to%20ignite,a%20champion%20for%20its%20achievements.');
+        })
+
+        const homepage = document.querySelector('.homepage')
+        homepage.addEventListener('click', ()=>{
+            window.location.replace('./index.html');
+        })
+
+        const utilities = document.querySelector('.utilities')
+        utilities.addEventListener('click', ()=> {
+            window.location.replace('./utils.html');
+        })
+        const socials = document.querySelector('.socials')
+        socials.addEventListener('click', ()=> {
+            window.location.replace('./socials.html');
+        })
+
+        const aiaa = document.querySelector('.aiaa')
+        aiaa.addEventListener('click', ()=> {
+            window.location.replace('./joinaiaa.html');
+        })
+    </script>
+</body>
+</html>

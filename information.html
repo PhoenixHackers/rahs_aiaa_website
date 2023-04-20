@@ -16,6 +16,7 @@
             <li class = "inactive socials"><a href=""></a>Socials</li>
             <li class = "inactive utilities"><a href=""></a>Utilities</li>
             <li class = "active information"><a href=""></a>About Us</li>
+            <li class = "inactive blog"><a href=""></a>Blog</li>
             <li class = "inactive aiaa"><a href=""></a>Join!</li>
         </ul>
     </nav>
@@ -71,10 +72,14 @@
         <img src="./images/instagram.jpg" class = "img1" width = "100" height = "100">
     </div>
     <h1></h1>
-    <p class="generictext">Copyright © 2022-<span id="currentyear"></span></p>
+    <p class="generictext">Copyright © 2023</p>
     </header>
     <script>
-	document.getElementById("currentyear").innerHTML = new Date().getFullYear();
+
+        const blog = document.querySelector('.blog')
+        blog.addEventListener('click', ()=> {
+            window.location.replace('./blog.html');
+        })
 
         const soft = document.querySelector('.softlink')
         soft.addEventListener('click', ()=>{

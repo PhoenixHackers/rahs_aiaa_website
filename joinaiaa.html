@@ -16,6 +16,7 @@
             <li class = "inactive socials"><a href=""></a>Socials</li>
             <li class = "inactive utilities"><a href=""></a>Utilities</li>
             <li class = "inactive information"><a href=""></a>About Us</li>
+            <li class = "inactive blog"><a href=""></a>Blog</li>
             <li class = "active aiaa"><a href=""></a>Join!!!</li>
         </ul>
     </nav>
@@ -31,10 +32,15 @@
         </div>
     </section>
     <h1></h1>
-    <p class="generictext">Copyright © 2022-<span id="currentyear"></span></p>
+    <p class="generictext">Copyright © 2023</p>
 
     <script>
-	document.getElementById("currentyear").innerHTML = new Date().getFullYear();
+
+        const blog = document.querySelector('.blog')
+        blog.addEventListener('click', ()=> {
+            window.location.replace('./blog.html');
+        })
+
         const information = document.querySelector('.information')
         information.addEventListener('click', ()=> {
             window.location.replace('./information.html');
