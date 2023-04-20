@@ -55,7 +55,8 @@
             const base = window.prompt('Base: ');
             const angle = window.prompt('Angle (in degrees): ');
 
-            var length = (distance * (Math.tan(radians(angle))) + base);
+            var length = distance * (Math.tan(radians(angle)));
+            length += base;
             window.alert('Length: ' + length);
         })
 
