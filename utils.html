@@ -33,9 +33,7 @@
     </header>
     <script>
         function radians(angle) {
-            const TAU = 2 * Math.PI;
-            //literally 2pi
-            return angle * TAU / 360;
+            return angle * Math.PI / 180;
             //The circumference of a circle is 2pi * the radius thus 2pi is the amount of raidians in a circle.
         }
         const goal = document.querySelector('.goal');
@@ -57,7 +55,7 @@
             const base = window.prompt('Base: ');
             const angle = window.prompt('Angle (in degrees): ');
 
-            const length = distance * (Math.tan(radians(angle))) + base
+            var length = (distance * (Math.tan(radians(angle))) + base);
             window.alert('Length: ' + length);
         })
 
