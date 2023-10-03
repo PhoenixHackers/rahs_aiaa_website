@@ -6,19 +6,26 @@
     <link rel="stylesheet" href='./style.css'>
 
 </head>
-<title>RAHS AIAA - About Us</title>
+<title>Do not scan random QR codes!! - AIAA</title>
 <link rel="icon" type="/images/favicon.ico" href="/images/favicon.ico">
 <body>
     <nav class="navbar">
-        <h1>What does AIAA do?</h1>
+        <h1>Do not scan random QR codes!!</h1>
         <ul class="nav-links">
-            <li class="inactive homepage"><a href=""></a>Home</li>
+            <li class="inactive homepage"><a href="#"></a>Home</li>
             <li class = "inactive socials"><a href=""></a>Socials</li>
             <li class = "inactive utilities"><a href=""></a>Utilities</li>
-            <li class = "active information"><a href=""></a>About Us</li>
+            <li class = "inactive information"><a href=""></a>About Us</li>
             <li class = "inactive aiaa"><a href=""></a>Join!</li>
         </ul>
     </nav>
+
+    <section class="The Evil QR Code">
+        <div style="text-align: center;"> 
+            <img src="./images/cyberpatriot.jpg" class = "img1" width = "405" height = "250">
+        </div>
+        <p class = "generictext">"Do not scan random QR codes!" - Raisbeck Aviation High School's AIAA CyberPatriot</p>
+    </section>
     <section class="CyberPatriot">
         <p class = "subtitle">What does AIAA do?</p>
         <h4 class = "generictext">What is AIAA?</h4>
@@ -74,23 +81,19 @@
     <p class="generictext">Copyright © 2023</p>
     </header>
     <script>
-        const soft = document.querySelector('.softlink')
-        soft.addEventListener('click', ()=>{
-            window.open('https://www.aiaa.org/about#:~:text=Our%20purpose%20is%20to%20ignite,a%20champion%20for%20its%20achievements.');
-        })
-
         const homepage = document.querySelector('.homepage')
         homepage.addEventListener('click', ()=>{
             window.location.replace('./index.html');
         })
 
-        const utilities = document.querySelector('.utilities')
-        utilities.addEventListener('click', ()=> {
-            window.location.replace('./utils.html');
-        })
         const socials = document.querySelector('.socials')
         socials.addEventListener('click', ()=> {
             window.location.replace('./socials.html');
+        })
+        
+        const information = document.querySelector('.information')
+        information.addEventListener('click', ()=> {
+            window.location.replace('./information.html');
         })
 
         const aiaa = document.querySelector('.aiaa')
